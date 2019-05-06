@@ -376,7 +376,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             geneid = get_id(gene)
             # if the gene introduced is not in the database
             if geneid == "no":
-                f = open("errornotvaialable.html", 'r')
+                f = open("errornotavailable.html", 'r')
                 contents = f.read()
                 contents = contents.replace("#", 'gene')
             else:
