@@ -177,11 +177,14 @@ def get_genes(chromo, start, end):
 
     seq = (r1.read().decode("utf-8"))
     conn.close()
-    info = json.loads(seq)
-    genes = ""
-    for infor in info:
-        gene = infor['gene_id']
-        genes += gene + ", "
+    if 'error' in seq:
+        genes = "no"
+    else:
+        info = json.loads(seq)
+        genes = ""
+        for infor in info:
+            gene = infor['gene_id']
+            genes += gene + ", "
     return genes
 
 
@@ -401,10 +404,14 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                 contents = contents.replace("#", 'chromosome, start and end')
             else:
                 genes = get_genes(chromo, start, end)
-                f = open('geneListresponse.html', 'r')
-                contents = f.read()
-                contents = contents.replace("#", chromo).replace("@", start)
-                contents = contents.replace("%", end).replace("&", genes)
+                if genes == 'no':
+                    f = open('error.html', 'r')
+                    contents = f.read()
+                else:
+                    f = open('geneListresponse.html', 'r')
+                    contents = f.read()
+                    contents = contents.replace("#", chromo).replace("@", start)
+                    contents = contents.replace("%", end).replace("&", genes)
         else:
             f = open('error.html', 'r')
             contents = f.read()

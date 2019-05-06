@@ -1,0 +1,424 @@
+BASIC LEVEL
+
+
+
+http://localhost:8000/
+or
+http://localhost:8000/mainpage.html
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MAIN PAGE</title>
+  </head>
+  <form>
+    Click the option you wish to perform:
+    <br>
+    <br>
+    BASIC LEVEL:
+    <br>
+    <br>
+    <a href="listSpecies.html">1. See the list of all species</a>
+    <br>
+    <br>
+    <a href="karyotype.html">2. Consult karyotype</a>
+    <br>
+    <br>
+    <a href="chromosomeLenght.html">3. Consult chromosome lenght</a>
+    <br>
+    <br>
+    MEDIUM LEVEL:
+    <br>
+    <br>
+    <a href="geneSeq.html">4. Retrieve the sequence of a human gene</a>
+    <br>
+    <br>
+    <a href="geneInfo.html">5. Retrieve information about a human gene</a>
+    <br>
+    <br>
+    <a href="geneCal.html">6. Obtain calculations about a human gene</a>
+    <br>
+    <br>
+    <a href="geneList.html">7. Obtain the names of the genes in a chromosome</a>
+  </body>
+</html>
+
+
+http://localhost:8000/listSpecies.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Species</title>
+</head>
+<body>
+    <form action="listSpecies" method="get">
+      Insert the number of species available you wish to see:
+        <br>
+        <input type="text" name="limit">
+    </form>
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/listSpecies?limit=
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of species</title>
+</head>
+<body>
+The available species in the database are: mus musculus, homo sapiens, cavia porcellus, mus musculus cbaj, amphilophus citrinellus, anolis carolinensis, cebus capucinus, labrus bergylta, panthera pardus, takifugu rubripes, rhinopithecus bieti, mastacembelus armatus, lepidothrix coronata, fukomys damarensis, monodelphis domestica, equus asinus asinus, xiphophorus maculatus, apteryx owenii, calidris pugnax, gasterosteus aculeatus, cricetulus griseus picr, mus spicilegus, oryzias melastigma, nannospalax galili, chelonoidis abingdonii, acanthochromis polyacanthus, scleropages formosus, sarcophilus harrisii, gallus gallus, latimeria chalumnae, numida meleagris, mus musculus aj, poecilia latipinna, phascolarctos cinereus, mus musculus fvbnj, cricetulus griseus chok1gshd, mus musculus lpj, heterocephalus glaber female, calidris pygmaea, anas platyrhynchos platyrhynchos, saimiri boliviensis boliviensis, lonchura striata domestica, callithrix jacchus, ovis aries, papio anubis, macaca fascicularis, notechis scutatus, capra hircus, fundulus heteroclitus, ursus americanus, mus musculus nzohlltj, notamacropus eugenii, tursiops truncatus, gambusia affinis, felis catus, pan paniscus, nomascus leucogenys, chlorocebus sabaeus, bos taurus, amphiprion ocellaris, mus pahari, coturnix japonica, carlito syrichta, apteryx haastii, macaca nemestrina, sphenodon punctatus, anser brachyrhynchus, anabas testudineus, lepisosteus oculatus, rhinopithecus roxellana, spermophilus dauricus, poecilia formosa, scophthalmus maximus, mus spretus, petromyzon marinus, xenopus tropicalis, gopherus agassizii, bison bison bison, mus musculus 129s1svimj, ictalurus punctatus, octodon degus, colobus angolensis palliatus, manacus vitellinus, astatotilapia calliptera, prolemur simus, mus musculus wsbeij, dasypus novemcinctus, kryptolebias marmoratus, mus musculus dba2j, urocitellus parryii, gorilla gorilla, microcebus murinus, mandrillus leucophaeus, pogona vitticeps, neovison vison, parus major, macaca mulatta, ornithorhynchus anatinus, oryzias latipes hni, eptatretus burgeri, canis lupus dingo, danio rerio, mus musculus nodshiltj, stegastes partitus, chinchilla lanigera, mus musculus c57bl6nj, astyanax mexicanus, ictidomys tridecemlineatus, vicugna pacos, crocodylus porosus, zonotrichia albicollis, amphiprion percula, panthera tigris altaica, meleagris gallopavo, piliocolobus tephrosceles, marmota marmota marmota, serinus canaria, apteryx rowi, salvator merianae, choloepus hoffmanni, mus caroli, sorex araneus, taeniopygia guttata, theropithecus gelada, hippocampus comes, cavia aperea, periophthalmus magnuspinnatus, aotus nancymaae, myotis lucifugus, sus scrofa, propithecus coquereli, drosophila melanogaster, pundamilia nyererei, echinops telfairi, junco hyemalis, vulpes vulpes, pan troglodytes, cricetulus griseus crigri, seriola dumerili, erinaceus europaeus, loxodonta africana, neolamprologus brichardi, pelodiscus sinensis, microtus ochrogaster, mola mola, ursus maritimus, dromaius novaehollandiae, oryctolagus cuniculus, xiphophorus couchianus, cyprinodon variegatus, ciona intestinalis, pygocentrus nattereri, esox lucius, ochotona princeps, mustela putorius furo, ciona savignyi, meriones unguiculatus, paramormyrops kingsleyae, jaculus jaculus, dipodomys ordii, cercocebus atys, oreochromis niloticus, pongo abelii, chrysemys picta bellii, maylandia zebra, equus caballus, mesocricetus auratus, pteropus vampyrus, seriola lalandi dorsalis, cyanistes caeruleus, mus musculus pwkphj, gadus morhua, haplochromis burtoni, saccharomyces cerevisiae, cynoglossus semilaevis, canis familiaris, monopterus albus, ailuropoda melanoleuca, castor canadensis, melopsittacus undulatus, peromyscus maniculatus bairdii, ficedula albicollis, bos mutus, mus musculus balbcj, mus musculus casteij, rattus norvegicus, otolemur garnettii, heterocephalus glaber male, caenorhabditis elegans, poecilia reticulata, oryzias latipes hsok, tetraodon nigroviridis, nothoprocta perdicaria, tupaia belangeri, mus musculus c3hhej, poecilia mexicana, oryzias latipes, procavia capensis, mus musculus akrj,
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/listSpecies?limit=10
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of species</title>
+</head>
+<body>
+The available species in the database are: mus musculus, homo sapiens, cavia porcellus, mus musculus cbaj, amphilophus citrinellus, anolis carolinensis, cebus capucinus, labrus bergylta, panthera pardus, takifugu rubripes,
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/karyotype.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karyotype</title>
+</head>
+<body>
+<form action="karyotype" method="get">
+      Insert the name of the species whose karyotype you would like to consult:
+    <br>
+    <input type="text" name="specie">
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+    </form>
+</body>
+</html>
+
+
+http://localhost:8000/karyotype?specie=zebrafish
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karyotype</title>
+</head>
+<body>
+Information about the karyotype of zebrafish
+<br>
+The chromosomes of the zebrafish species are:
+
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - MT
+
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/chromosomeLenght.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome lenght</title>
+</head>
+<body>
+<form action="chromosomeLenght" method="get">
+      Enter the name of the species  <input type="text" name="specie">
+      <br><br>
+      Enter the name of the chromosome
+      <input type="text" name="chromo">
+    <br>
+    <br>
+    <input type="submit"/>
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/chromosomeLenght?specie=homo+sapiens&chromo=1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome Lenght</title>
+</head>
+<body>
+The lenght of chromosome 1 of the homo_sapiens species is 71251
+
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+
+MEDIUM LEVEL
+
+
+
+http://localhost:8000/geneSeq.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene sequence</title>
+</head>
+<body>
+<form action="geneSeq" method="get">
+      Insert the name of the gene whose sequence you would like to obtain:
+    <br>
+    <input type="text" name="gene">
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+    </form>
+</body>
+</html>
+
+
+http://localhost:8000/geneSeq?gene=FRAT1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene sequence</title>
+</head>
+<body>
+The sequence for the gene FRAT1 is:
+<br>
+ATTCCGGCTCCCGCGGCTGCAGGCGCGCGGCTAGAGTGCCTGGCGGGCTCCGGCTTCCGCGTCCGCCCCGGCCCCGGTCCAGACTTAGTCTTCAGCTCCGCGCCCGCTCCGCCGCGGCCC
+ACCGCGCCCGCCGGCAGCCGAGCCCCCAGCGACGCCCGCACAGCTCCGGGTGCCCAGACAGGGGGCCATGCCGTGCCGGAGGGAGGAGGAAGAGGAAGCCGGCGAGGAGGCGGAGGGGGA
+GGAAGAGGAGGAGGACAGCTTCCTCCTACTGCAGCAGTCAGTGGCGCTGGGCAGCTCGGGCGAGGTGGACCGGCTGGTGGCCCAGATCGGCGAGACGCTGCAGCTGGACGCGGCGCAGCA
+CAGCCCGGCCTCGCCGTGCGGGCCCCCGGGGGCGCCGCTGCGGGCCCCGGGGCCCCTGGCTGCGGCGGTGCCGGCGGACAAGGCCAGGTCCCCGGCGGTGCCGCTGCTGCTGCCGCCCGC
+GTTGGCGGAGACTGTGGGCCCGGCGCCCCCTGGGGTCCTGCGCTGCGCCCTGGGGGACCGCGGCCGCGTGCGGGGCCGCGCTGCGCCCTACTGCGTGGCCGAGCTCGCCACAGGCCCCAG
+CGCGCTGTCCCCACTGCCCCCTCAGGCCGACCTTGATGGGCCTCCGGGAGCTGGCAAGCAGGGCATCCCGCAGCCGCTGTCGGGTCCGTGCCGGCGAGGATGGCTCCGGGGCGCCGCCGC
+CTCCCGCCGCCTGCAGCAGCGACGCGGGTCCCAACCAGAAACCCGCACAGGCGACGACGACCCGCACCGGCTTCTGCAGCAGCTAGTGCTCTCTGGAAACCTCATCAAGGAGGCCGTGCG
+AAGGCTTCATTCGCGACGGCTGCAGTTACGTGCAAAGCTTCCCCAACGCCCGCTCCTGGGACCTCTGTCGGCCCCGGTGCATGAACCCCCTTCGCCTCGCAGCCCTCGCGCGGCCTGCAG
+TGACCCTGGCGCCTCCGGGAGGGCGCAGCTCAGAACTGGCGACGGCGTTCTTGTGCCTGGCAGCTAACACGCCCGGGGTGGCCACAGCGCCAGCCTCAGACTGGAGGGCAAGGGGTTCCC
+TTGAGGGCTGCAGTTCTACTCAGGCTGGTGGAGAACTCTGGCTTTTGGAAGCGAGAGTAAAAAGCTAATGACGAGGAACCGAAAAATCGCGAGTGTTTCGCGGGTAACTGGGGTTGAGGG
+CCAAAATATTTGGAATGAAGGACTTTGGCCCTATTTAAGGCAGATTTTACAGAGCGCACCTCAAACGTACAAGTCAGTAGGACTCCTTATTTGGCGTGACCCGACCTGGCCGCGGAGCCT
+GCATTTCCTCGCAGCCTCTCAGTGCCCTCCAGCCCCGCGACCATGTGGCCACAATCCACGCTTCTCCGGATCGCGGTGCGCCGGAACCACGGAGGATGATGCCAGTTACTTGCTTTACCT
+TTTCAGGGCTGGCTCCTGATCCACTTTGGGGGAGGAGAACATGAGTAGATAATTTCAGGGTGCAGCCCAATCTGCCAGACTTAAAAAAACCATCTTGTGTCTTTGGAGGTGCTGCTTAAT
+ACCAAACATGCGGTGCCATGAAGGGACCCTTTGGGGGTTGAATAGGAGTTAACCCCTGCGCTCTCTTTGCAACTGTCTCTCTTCTCAGAGTGGTGGGGGAAGGCTGTACGACACGGGTGG
+GGAAAGGAGGTGGGGGCGGGGAGTATTGAATGGTGGTGGAAGGGTAGAGAGGCGCGGAGTGAACCCCACGCCCTGTCTAAAGTGTATTTTCAGAGCCGGCCCGCCTCTCCTCGGTTCAAG
+GTCACTGTTTCCTGGGCACGCACTGGGTTGCGGGACAGAGTAGCCAGGTTCTGCCGGTGCTCGGAGAAGAGCGCAGTGTTTTGCAAGTGCTGGAGTCTCCTGAGGACACGCGCGTCGCCG
+CCACCGCGGGTGTGGGAAAGCGCGGACGTGCTGGGCGGCTGTGCTTCGGTAGGCGACCACCGCCCCTGGCCGCGCTCCGGGCTTTCACGGAAACTCCCGAGACCGGGCCCTGGGTTCCTC
+CTCTCCTACTCGGCTCTGCAGTCCTACTCAAGCGGGTGGCTCTGGGATCCTGGGGGCCTGGGTTGGGGGCTAGGGAGACGCCATGTGATGGACACTCCAGGGACACACAGCCTAGCACAG
+CAGCTTATAATGGGCTCTCCGGGGCCATTTGCAATAACAGCTGCAATTCCCTGGATAGACGAGTTGATTTCCTCCCTCTGCCCCTCCCCCAGCCATGCCAGCTGGCCTTTGTAAGTGCAG
+GAAACCGAGTAGAAAATGTGACCCTCCAAATGGAGAAGCTGCAGGCTTTGCCATTGTGAACCATGGTGAAGTGCTTGGAACATACTGTTCACTCACTCTAAAGGCGCTGAGACTGTGCTG
+TTGTTCTCGTTTTTATAGTCAATGGCTTGTTCATCATCCAGATGTGGCTACTGACATATCTACACTTCGCACCGGAGTGTCTGGAATTGTGGCTATCCTGATTATAGGATTTTAACTTAA
+CTGAAATGCCTGCTTTGAATAAATGTGTTGGGTTTTTTGTTTGGTTTTATTTTATACTTGCCATCAGTGAAAAAGATGTACAGAACACATTTCTCTGATCTCCATAAACATGAAAACACT
+TGAAATCTC
+
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/geneInfo.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene information</title>
+</head>
+<body>
+<form action="geneInfo" method="get">
+      Insert the name of the gene whose information you would like to obtain:
+    <br>
+    <input type="text" name="gene">
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+    </form>
+</body>
+</html>
+
+
+http://localhost:8000/geneInfo?gene=FRAT1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene information</title>
+</head>
+<body>
+Information about the FRAT1 gene:
+<br>
+<br>
+Start of the gene: 97319267
+<br>
+End of the gene: 97321915
+<br>
+Length of the gene's sequence: 2787
+<br>
+Id of the gene: ENSG00000165879
+<br>
+Chromosome it belongs to: 10
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/geneCal.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene calculations</title>
+</head>
+<body>
+<form action="geneCal" method="get">
+      Insert the name of the gene whose calculations you would like to obtain:
+    <br>
+    <input type="text" name="gene">
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+    </form>
+</body>
+</html>
+
+
+
+http://localhost:8000/geneCal?gene=FRAT1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene calculations</title>
+</head>
+<body>
+Calculations of the FRAT1 gene:
+<br>
+<br>
+The total length of the gene is: 2787
+<br>
+The percentage of the base A is: 17.151058485827054
+<br>
+The percentage of the base C is: 28.740581270182993
+<br>
+The percentage of the base G is: 30.570505920344456
+<br>
+The percentage of the base T is: 18.729817007534983
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/geneList.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene List</title>
+</head>
+<body>
+<form action="geneList" method="get">
+      Enter the number of the chromosome  <input type="text" name="chromo">
+      <br><br>
+      Enter the starting position
+      <input type="text" name="start">
+    <br>
+    <br>
+    Enter the ending position
+      <input type="text" name="end">
+    <br>
+    <br>
+    <input type="submit"/>
+    <br>
+    <br>
+    <a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/geneList?chromo=1&start=1&end=3000000
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gene list</title>
+</head>
+<body>
+The genes for chromosome 1 from 1 to 3000000 are:
+<br>
+ENSG00000223972, ENSG00000227232, ENSG00000278267, ENSG00000243485, ENSG00000284332, ENSG00000237613, ENSG00000268020, ENSG00000240361, ENSG00000186092, ENSG00000238009, ENSG00000239945, ENSG00000233750, ENSG00000268903, ENSG00000269981, ENSG00000239906, ENSG00000241860, ENSG00000222623, ENSG00000241599, ENSG00000279928, ENSG00000279457, ENSG00000273874, ENSG00000228463, ENSG00000236679, ENSG00000236601, ENSG00000237094, ENSG00000269732, ENSG00000284733, ENSG00000233653, ENSG00000250575, ENSG00000278757, ENSG00000230021, ENSG00000235146, ENSG00000225972, ENSG00000225630, ENSG00000237973, ENSG00000278791, ENSG00000229344, ENSG00000240409, ENSG00000248527, ENSG00000198744, ENSG00000268663, ENSG00000284662, ENSG00000229376, ENSG00000228327, ENSG00000223181, ENSG00000229905, ENSG00000237491, ENSG00000285268, ENSG00000230092, ENSG00000177757, ENSG00000228794, ENSG00000225880, ENSG00000230368, ENSG00000234711, ENSG00000283040, ENSG00000272438, ENSG00000230699, ENSG00000241180, ENSG00000223764, ENSG00000187634, ENSG00000188976, ENSG00000187961, ENSG00000187583, ENSG00000187642, ENSG00000272512, ENSG00000188290, ENSG00000187608, ENSG00000231702, ENSG00000224969, ENSG00000188157, ENSG00000242590, ENSG00000217801, ENSG00000273443, ENSG00000237330, ENSG00000131591, ENSG00000285812, ENSG00000223823, ENSG00000207730, ENSG00000207607, ENSG00000198976, ENSG00000272141, ENSG00000205231, ENSG00000162571, ENSG00000186891, ENSG00000186827, ENSG00000078808, ENSG00000176022, ENSG00000184163, ENSG00000260179, ENSG00000160087, ENSG00000230415, ENSG00000162572, ENSG00000131584, ENSG00000278073, ENSG00000169972, ENSG00000127054, ENSG00000283712, ENSG00000240731, ENSG00000224051, ENSG00000169962, ENSG00000107404, ENSG00000284372, ENSG00000162576, ENSG00000175756, ENSG00000223663, ENSG00000221978, ENSG00000224870, ENSG00000242485, ENSG00000264293, ENSG00000272455, ENSG00000235098, ENSG00000225905, ENSG00000205116, ENSG00000225285, ENSG00000179403, ENSG00000215915, ENSG00000160072, ENSG00000284740, ENSG00000197785, ENSG00000205090, ENSG00000160075, ENSG00000215014, ENSG00000274481, ENSG00000228594, ENSG00000272106, ENSG00000197530, ENSG00000189409, ENSG00000248333, ENSG00000272004, ENSG00000189339, ENSG00000269737, ENSG00000215914, ENSG00000008128, ENSG00000268575, ENSG00000227775, ENSG00000215790, ENSG00000008130, ENSG00000078369, ENSG00000231050, ENSG00000169885, ENSG00000178821, ENSG00000142609, ENSG00000233542, ENSG00000187730, ENSG00000226969, ENSG00000067606, ENSG00000271806, ENSG00000182873, ENSG00000162585, ENSG00000234396, ENSG00000157933, ENSG00000116151, ENSG00000272161, ENSG00000269896, ENSG00000272420, ENSG00000157916, ENSG00000157911, ENSG00000149527, ENSG00000224387, ENSG00000229393, ENSG00000157881, ENSG00000197921, ENSG00000272449, ENSG00000238164, ENSG00000157873, ENSG00000225931, ENSG00000228037, ENSG00000157870, ENSG00000142606, ENSG00000237058, ENSG00000215912, ENSG00000285945, ENSG00000283259, ENSG00000233234, ENSG00000231630, ENSG00000284745,
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
