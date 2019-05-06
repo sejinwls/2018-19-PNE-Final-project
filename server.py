@@ -1,6 +1,5 @@
 import http.server
 import socketserver
-import termcolor
 import http.client
 import json
 from seq import Seq
@@ -189,7 +188,7 @@ def get_genes(chromo, start, end):
 class TestHandler(http.server.BaseHTTPRequestHandler):
 
     def do_GET(self):
-        termcolor.cprint(self.requestline, 'green')
+        print(self.requestline, 'green')
 
         if self.requestline.startswith("GET / ") or self.requestline.startswith("GET /mainpage.html"):
             f = open("mainpage.html", 'r')
@@ -266,6 +265,8 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
             contents = f.read()
         elif self.requestline.startswith("GET /chromosomeLenght?"):
             specie = self.requestline.split("=")[1].split("&")[0]
+            if "+" in specie:
+                specie = specie.replace("+", "_")
             chromo = self.requestline.split("=")[2].split(" ")[0]
             # Check that the user has introduced a species
             if not(specie == ""):
@@ -385,6 +386,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                 contents = contents.replace("&", str(sequence.perc("C")))
                 contents = contents.replace("*", str(sequence.perc("G")))
                 contents = contents.replace("%", str(sequence.perc("T")))
+                contents = contents.replace("#", gene)
         elif self.requestline.startswith("GET /geneList.html"):
             f = open('geneList.html', 'r')
             contents = f.read()
@@ -428,7 +430,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 # ------------------------
 # -- Set the new handler
 Handler = TestHandler
-
+socketserver.TCPServer.allow_reuse_address = True
 # -- Open the socket server
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
 
