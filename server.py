@@ -2,7 +2,6 @@ import http.server
 import socketserver
 import http.client
 import json
-from seq import Seq
 # Define the Server's port
 PORT = 8000
 
@@ -381,14 +380,16 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                 contents = f.read()
                 contents = contents.replace("#", 'gene')
             else:
-                sequence = Seq(get_seq(geneid))
+                sequence = get_seq(geneid)
+                seq = json.loads(sequence)
+                seq = seq['seq']
                 f = open("geneCalresponse.html", 'r')
                 contents = f.read()
-                contents = contents.replace("@", str(sequence.len()))
-                contents = contents.replace("$", str(sequence.perc("A")))
-                contents = contents.replace("&", str(sequence.perc("C")))
-                contents = contents.replace("*", str(sequence.perc("G")))
-                contents = contents.replace("%", str(sequence.perc("T")))
+                contents = contents.replace("@", str(len(seq)))
+                contents = contents.replace("$", str((seq.count("A")/len(seq))*100))
+                contents = contents.replace("&", str((seq.count("C")/len(seq))*100))
+                contents = contents.replace("*", str((seq.count("G")/len(seq))*100))
+                contents = contents.replace("%", str((seq.count("T")/len(seq))*100))
                 contents = contents.replace("#", gene)
         elif self.requestline.startswith("GET /geneList.html"):
             f = open('geneList.html', 'r')

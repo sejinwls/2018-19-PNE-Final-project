@@ -62,6 +62,25 @@ http://localhost:8000/listSpecies.html
 </html>
 
 
+http://localhost:8000/listSpecies?limit=20
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of species</title>
+</head>
+<body>
+The available species in the database are:
+<br>
+ficedula albicollis, castor canadensis, ciona intestinalis, pogona vitticeps, manacus vitellinus, mus spicilegus, zonotrichia albicollis, dipodomys ordii, nomascus leucogenys, mus musculus fvbnj, fundulus heteroclitus, mus spretus, poecilia reticulata, amphiprion ocellaris, meriones unguiculatus, saccharomyces cerevisiae, paramormyrops kingsleyae, jaculus jaculus, mus musculus c3hhej, amphiprion percula,
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
 http://localhost:8000/listSpecies?limit=
 
 <!DOCTYPE html>
@@ -113,6 +132,49 @@ http://localhost:8000/karyotype.html
     <br>
     <a href="mainpage.html"> Go back to main page</a>
     </form>
+</body>
+</html>
+
+
+http://localhost:8000/karyotype?specie=mouse
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karyotype</title>
+</head>
+<body>
+Information about the karyotype of mouse
+<br>
+The chromosomes of the mouse species are:
+
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - X
+  - &#39;Y&#39;
+  - MT
+
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
 </body>
 </html>
 
@@ -184,6 +246,24 @@ http://localhost:8000/chromosomeLenght.html
     <br>
     <br>
     <a href="mainpage.html"> Go back to main page</a>
+</body>
+</html>
+
+
+http://localhost:8000/chromosomeLenght?specie=mouse&chromo=X
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chromosome Lenght</title>
+</head>
+<body>
+The lenght of chromosome X of the mouse species is 42057
+
+<br>
+<br>
+<a href="mainpage.html"> Go back to main page</a>
 </body>
 </html>
 
