@@ -331,7 +331,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
                 sequence = get_seq(geneid)
                 seq = json.loads(sequence)
                 seq = seq['seq']
-                # We place /n every 120 bases so it fits int he screen
+                # We place /n every 120 bases so it fits in the screen
                 new_seq = []
                 for i in range(0, len(seq), 120):
                     fragment = seq[i:i+120]
@@ -432,13 +432,8 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         return
 
 
-# ------------------------
-# - Server MAIN program
-# ------------------------
-# -- Set the new handler
 Handler = TestHandler
 socketserver.TCPServer.allow_reuse_address = True
-# -- Open the socket server
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
 
     print("Serving at PORT", PORT)
